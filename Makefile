@@ -8,6 +8,7 @@ LIBFT = ./libft/libft.a
 CC = gcc
 FLAGS = -Wall -Wextra -Werror
 HEADER= FdF.h
+
 LIBRARIES = -lmlx -lm -lft -L$(LIBFT_DIRECTORY) -L$(MINILIBX_DIRECTORY) -framework OpenGL -framework AppKit
 INCLUDES = -I$(LIBFT_HEADERS) -I$(MINILIBX_HEADERS)
 
@@ -15,6 +16,12 @@ LIBFT = $(LIBFT_DIRECTORY)libft.a
 LIBFT_DIRECTORY = ./libft/
 LIBFT_HEADERS = $(LIBFT_DIRECTORY)
 
+#for linux
+#MINILIBX = $(MINILIBX_DIRECTORY)libmlx.a
+#MINILIBX_DIRECTORY = ./minilibx-linux/
+#MINILIBX_HEADERS = $(MINILIBX_DIRECTORY)
+
+#for mac
 MINILIBX = $(MINILIBX_DIRECTORY)libmlx.a
 MINILIBX_DIRECTORY = ./minilibx/
 MINILIBX_HEADERS = $(MINILIBX_DIRECTORY)
